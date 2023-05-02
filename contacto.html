@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="shortcut icon" href="./Icono para la página/GP favicon white2.png">
+    <title>Gastón Paolini - Contacto</title>
+</head>
+
+<body class="principalcontacto">
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-md ">
+                <a class="navbar-brand" href="./index.html"><img src="./Imagenes logo-tarjetas/GP3.png" alt="logo magia"
+                        id="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./show.html">Show</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="formulario1">Dejanos toda la inforación para brindarte lo que estas buscando</h1>
+            <form action="#" class="formulario">
+                <fieldset>
+                    <legend>
+                        <h1 class="formulario1">Envienos su consulta</h1>
+                    </legend>
+                    <br>
+                    <label for="iname">Nombre:</label>
+                    <input type="text" name="name" id="iname" placeholder="Ingresa tu nombre" required class="act">
+                    <br><br>
+                    <label for="isurname">Apellido:</label>
+                    <input type="text" name="surname" id="isurname" placeholder="Ingresa tu Apellido" required
+                        class="act">
+                    <br><br>
+                    <label for="iemail">E-mail:</label>
+                    <input type="text" name="email" id="iemail" placeholder="Ingresa tu mail" required class="act">
+                    <br><br>
+                    <label for="itel">Número de contacto:</label>
+                    <input type="tel" name="tel" id="itel" placeholder="Ingresa tu teléfono" required class="act">
+                    <br>
+                    <div id="formulario">
+                        <h4>¿Por dónde desea que lo contactemos?</h4>
+                        <input type="checkbox" name="Email" value="Email" id="iemail" class="act">
+                        <label for="iemail">E-mail</label>
+                        <input type="checkbox" name="phone" value="Phone" id="iphone" class="act">
+                        <label for="iphone">Teléfono</label>
+                        <br><br><br>
+                        <label for="idate">Fecha del evento</label>
+                        <input type="date" id="idate" name="date" class="act">
+                        <br><br>
+                        <label for="itime">Hora del evento</label>
+                        <input type="time" id="itime" name="time" class="act">
+                        <br><br>
+                        <label for="inumber">Cantidad de invitados</label>
+                        <input type="number" id="inumer" name="guest" class="act">
+                        <br><br>
+                        <label for="ireception">Recepción</label>
+                        <input type="radio" id="ireception" name="show" value="Recepción" class="act">
+                        <label for="iprincipal">Show Principal</label>
+                        <input type="radio" id="iprincipal" name="show" value="Showprincipal" class="act">
+                        <label for="iboth">Ambos</label>
+                        <input type="radio" id="iboth" name="show" value="both" class="act">
+                        <br><br>
+                        <label for="icoment">Dejenos su comentario:</label><br>
+                        <textarea name="coment" id="icoment" cols="30" rows="10"
+                            placeholder="Describa el evento."></textarea>
+                        <br><br>
+                        <input type="submit" name="Enviar" class="enviar">
+                        <input type="reset" name="Restablecer" class="reset">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </section>
+    <footer>
+        <div class="redes">
+            <p id="pfooter">Todos los derechos reservados 2023</p>
+            <div class="redes2">
+                <a href="https://www.instagram.com/gastonpaolini/" id="instagram"><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@gastonpaolini" id="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/1169472413" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@gastonpaolini9803" id="youtube"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="subir" type="submit"><i class="fa-regular fa-circle-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
