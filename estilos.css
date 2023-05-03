@@ -860,6 +860,12 @@ footer:hover {
     justify-content: center;
     height: auto;
   }
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8";
+    height: 300vh;
+  }
   .item1 {
     background-size: cover;
     background-position-y: top;
