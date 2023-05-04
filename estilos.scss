@@ -9,34 +9,46 @@ html {
     scroll-behavior: smooth;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@200&family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;1,100&family=Bruno+Ace+SC&family=Castoro+Titling&family=Delicious+Handrawn&family=Great+Vibes&family=Indie+Flower&family=Instrument+Serif:ital@0;1&family=Karla:wght@300&family=Libre+Baskerville&family=Lobster&family=Nova+Oval&family=Oswald:wght@200&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Poltawski+Nowy:ital@0;1&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@0,300;1,300&family=Righteous&family=Roboto:wght@100&family=Satisfy&family=Source+Serif+Pro:wght@200&family=Ysabeau:ital,wght@0,200;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@200&family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;1,100&family=Bruno+Ace+SC&family=Castoro+Titling&family=Delicious+Handrawn&family=Great+Vibes&family=Indie+Flower&family=Instrument+Serif:ital@0;1&family=Karla:wght@300&family=Libre+Baskerville&family=Lobster&family=Nova+Oval&family=Oswald:wght@200&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Poltawski+Nowy:ital@0;1&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@0,300;1,300&family=Righteous&family=Roboto:wght@100&family=Satisfy&family=Source+Serif+Pro:wght@200&family=Ysabeau:ital,wght@0,200;1,200&display=swap');
 
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Archivo', sans-serif;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Bitter', serif;
-font-family: 'Bruno Ace SC', cursive;
-font-family: 'Castoro Titling', cursive;
-font-family: 'Delicious Handrawn', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Instrument Serif', serif;
-font-family: 'Karla', sans-serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Nova Oval', cursive;
-font-family: 'Oswald', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Poltawski Nowy', serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Satisfy', cursive;
-font-family: 'Source Serif Pro', serif;
-font-family: 'Ysabeau', sans-serif; */
 
-body {
+//font-family: 'Archivo', sans-serif;
+//font-family: 'Bitter', serif;
+//font-family: 'Castoro Titling', cursive;
+//font-family: 'Great Vibes', cursive;
+//font-family: 'Instrument Serif', serif;
+//font-family: 'Libre Baskerville', serif ;
+//font-family: 'Poltawski Nowy', serif ;
+//font-family: 'PT Sans Narrow', sans-serif ;
+//font-family: 'Raleway', sans-serif;
+//font-family: 'Source Serif Pro', serif;
+//font-family: 'Ysabeau', sans-serif; 
+//font-family: "Karla", sans-serif;
+
+//Variables de color
+
+$color1: #5079F2;
+$color2: #f25252;
+$color3: #f27e7e;
+$color4: #f2f2f2;
+$color5: #595959;
+
+
+//Variables de letra
+$font1:'Archivo', sans-serif;
+$font2:'Bitter', serif;
+$font3:'Castoro Titling', cursive;
+$font4:'Great Vibes', cursive;
+$font5:'Instrument Serif', serif;
+$font6:'Libre Baskerville', serif ;
+$font7:'Poltawski Nowy', serif ;
+$font8:'PT Sans Narrow', sans-serif ;
+$font9:'Raleway', sans-serif;
+$font10:'Source Serif Pro', serif;
+$font11:'Ysabeau', sans-serif;
+$font12: "Karla", sans-serif;
+
+body{
     height: calc(100vh - 80px);
 }
 
@@ -81,7 +93,7 @@ body {
     border: solid 5px white;
     height: 150px;
     width: 600p;
-    border: 3px solid #5372ff;
+    border: 3px solid $color1;
     transition: all 0.9s;
     filter: grayscale(100%);
 }
@@ -92,6 +104,12 @@ body {
     filter: grayscale(0%);
 }
 
+.collapse{
+    &.navbar-collapse{
+        display: flex;
+        justify-content: center;
+    }
+}
 .navbar-toggler {
     padding-left: 70px;
     border: none;
@@ -119,7 +137,7 @@ body {
     display: flex;
     justify-content: right;
     -webkit-text-stroke: 0.25px #5372ff;
-    font-family: "Karla", sans-serif;
+    font-family: $font12;
     display: flex;
     justify-content: end;
 }
@@ -147,16 +165,16 @@ h1 {
     padding: 10px;
     margin: 0px;
     text-align: center;
-    font-family: Bloverly;
+    font-family: $font1;
 }
 
 
 .f-letter::first-letter {
-    color: rgb(175, 6, 6);
+    color: $color3;//rgb(175, 6, 6);
     font-size: 45px;
     font-weight: bold;
-    text-shadow: 0 0 5px white;
-    background-color: #1a1a1ac0;
+    // text-shadow: 0 0 5px white;
+    // background-color: #1a1a1ac0;
 }
 
 
@@ -165,7 +183,7 @@ h1 {
     padding: 10px;
     margin: 20px;
     font-size: 20px;
-    font-family: Ricordi;
+    font-family: $font7;
     text-align: center;
     background-color: #1a1a1ac0;
     border-radius: 10px;
@@ -176,7 +194,7 @@ h1 {
     padding: 10px;
     margin: 0px;
     font-size: 30px;
-    font-family: Ricordi;
+    font-family: $font7;
     text-align: center;
     background-color: rgba(255, 0, 0, 0.623);
 }
@@ -557,7 +575,7 @@ h1 {
     color: white;
     display: inline;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font10;
     font-size: 20px;
     padding: 10px;
     margin: 10px;
@@ -596,7 +614,7 @@ label {
     font-weight: bold;
     color: azure;
     text-shadow: 0 0 5px #1a1a1a;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: $font9;
     text-align: center;
 }
 
@@ -612,7 +630,7 @@ label {
     font-weight: bold;
     color: azure;
     text-shadow: 0 0 5px #1a1a1a;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: $font9;
     text-align: center;
 }
 
@@ -638,7 +656,7 @@ footer:hover {
     color: white;
     padding: 10px;
     margin: 0px;
-    font-family: "Bitter", serif;
+    font-family: $font11;
     font-size: 35px;
 }
 
@@ -812,10 +830,16 @@ footer:hover {
         padding: 5px;
         margin: 5px;
         background-color: #1a1a1ab7;
-        font-family: "Instrument Serif", serif;
-        box-shadow: 0 0 5px #fff;
+        font-family: $font9;
+        box-shadow: 0 0 5px $color4;
         border-radius: 10px;
         text-align: center;
+    }
+    
+    h4{
+        font-family: $font9;
+        background-color: $color1;
+        border-radius: 10px;
     }
 
     #icoment {

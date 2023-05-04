@@ -9,30 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Archivo', sans-serif;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Bitter', serif;
-font-family: 'Bruno Ace SC', cursive;
-font-family: 'Castoro Titling', cursive;
-font-family: 'Delicious Handrawn', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Instrument Serif', serif;
-font-family: 'Karla', sans-serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Nova Oval', cursive;
-font-family: 'Oswald', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Poltawski Nowy', serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Satisfy', cursive;
-font-family: 'Source Serif Pro', serif;
-font-family: 'Ysabeau', sans-serif; */
 body {
   height: calc(100vh - 80px);
 }
@@ -76,7 +52,7 @@ body {
   border: solid 5px white;
   height: 150px;
   width: 600p;
-  border: 3px solid #5372ff;
+  border: 3px solid #5079F2;
   transition: all 0.9s;
   filter: grayscale(100%);
 }
@@ -85,6 +61,11 @@ body {
   transition: all 0.9s;
   border-radius: 20%;
   filter: grayscale(0%);
+}
+
+.collapse.navbar-collapse {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-toggler {
@@ -142,15 +123,13 @@ h1 {
   padding: 10px;
   margin: 0px;
   text-align: center;
-  font-family: Bloverly;
+  font-family: "Archivo", sans-serif;
 }
 
 .f-letter::first-letter {
-  color: rgb(175, 6, 6);
+  color: #f27e7e;
   font-size: 45px;
   font-weight: bold;
-  text-shadow: 0 0 5px white;
-  background-color: rgba(26, 26, 26, 0.7529411765);
 }
 
 .bio {
@@ -158,7 +137,7 @@ h1 {
   padding: 10px;
   margin: 20px;
   font-size: 20px;
-  font-family: Ricordi;
+  font-family: "Poltawski Nowy", serif;
   text-align: center;
   background-color: rgba(26, 26, 26, 0.7529411765);
   border-radius: 10px;
@@ -169,7 +148,7 @@ h1 {
   padding: 10px;
   margin: 0px;
   font-size: 30px;
-  font-family: Ricordi;
+  font-family: "Poltawski Nowy", serif;
   text-align: center;
   background-color: rgba(255, 0, 0, 0.623);
 }
@@ -677,7 +656,7 @@ h1 {
   color: white;
   display: inline;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 20px;
   padding: 10px;
   margin: 10px;
@@ -715,7 +694,7 @@ label {
   font-weight: bold;
   color: azure;
   text-shadow: 0 0 5px #1a1a1a;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -731,7 +710,7 @@ label {
   font-weight: bold;
   color: azure;
   text-shadow: 0 0 5px #1a1a1a;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -756,7 +735,7 @@ footer:hover {
   color: white;
   padding: 10px;
   margin: 0px;
-  font-family: "Bitter", serif;
+  font-family: "Ysabeau", sans-serif;
   font-size: 35px;
 }
 
@@ -890,10 +869,15 @@ footer:hover {
     padding: 5px;
     margin: 5px;
     background-color: rgba(26, 26, 26, 0.7176470588);
-    font-family: "Instrument Serif", serif;
-    box-shadow: 0 0 5px #fff;
+    font-family: "Raleway", sans-serif;
+    box-shadow: 0 0 5px #f2f2f2;
     border-radius: 10px;
     text-align: center;
+  }
+  h4 {
+    font-family: "Raleway", sans-serif;
+    background-color: #5079F2;
+    border-radius: 10px;
   }
   #icoment {
     text-align: center;
