@@ -250,6 +250,7 @@ h1 {
   font-size: 32px;
   height: 60px;
   font-family: "Ysabeau", sans-serif;
+  padding-bottom: 5px;
 }
 
 .showtipo {
@@ -738,6 +739,9 @@ footer:hover {
     background-position: center;
     height: auto;
     width: auto;
+  }
+  .show0 {
+    font-size: 22px;
   }
   .showtipo {
     display: grid;

@@ -303,6 +303,7 @@ h1 {
     font-size: 32px;
     height: 60px;
     font-family: $font11;
+    padding-bottom: 5px;
 
 }
 
@@ -626,7 +627,11 @@ footer:hover {
         height: auto;
         width: auto;
     }
-    
+
+    .show0{
+        font-size: 22px;
+    }
+
     .showtipo {
         display: grid;
         grid-template-columns: 1fr;
