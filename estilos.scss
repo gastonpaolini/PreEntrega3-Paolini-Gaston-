@@ -154,6 +154,7 @@ a {
 a:hover {
     color: $color5;
 }
+//_____________________________________________________________________________________________________________
 
 h1 {
     color: white;
@@ -301,227 +302,106 @@ h1 {
     background-color: #1a1a1acb;
     font-size: 32px;
     height: 60px;
+    font-family: $font11;
 
 }
 
 .showtipo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "tipo1 tipo3 tipo5 tipo7"
-        "tipo2 tipo4 tipo6 tipo8";
+        "tipo1 tipo1 Bio1 Bio1"
+        "tipo2 tipo2 Bio1 Bio1"
+        "Bio2 Bio2 tipo3 tipo3"
+        "Bio2 Bio2 tipo4 tipo4"
+        "tipo5 tipo5 Bio3 Bio3"
+        "tipo6 tipo6 Bio3 Bio3"
+        "Bio4 Bio4 tipo7 tipo7"
+        "Bio4 Bio4 tipo8 tipo8";
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     transition: all 1.09s;
     line-height: 25px;
     height: auto;
+
 }
 
-.shows {
-    height: 70px;
-}
 
-.showp {
-    height: auto;
-}
+@each $tipo in tipo1,tipo2,tipo5,tipo6{
+    .show-#{$tipo}{
+        color: rgb(255, 255, 255);
+        grid-area: $tipo;
+        border: solid 2px black;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgb(247, 48, 50);
+        filter: sepia(1);
+        transition: all 1.09s;
+        text-shadow: 0 0 5px black;
+        font-size: 20px;
+        font-family:'Poltawski Nowy', serif ;
+    }
+    }
 
-.tipo1 {
-    color: rgb(255, 255, 255);
-    grid-area: tipo1;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgb(247, 48, 50);
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-    font-size: 25px;
-}
+    @each $tipo in tipo3,tipo4,tipo7,tipo8{
+        .show-#{$tipo}{
+            color: rgb(255, 255, 255);
+            grid-area: $tipo;
+            border: solid 2px black;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #5372ff ;
+            filter: sepia(1);
+            transition: all 1.09s;
+            text-shadow: 0 0 5px black;
+            font-size: 20px;
+            font-family:'Poltawski Nowy', serif 
+        }
+    }
 
-.tipo1:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
+    @each $tipo in tipo1,tipo3,tipo5,tipo7{
+        .show-#{$tipo}{
+            &.titulo{
+            font-size: 30px;
+            height: 90px;
+            }
+        }
+    }
 
-.tipo2 {
-    color: rgb(255, 255, 255);
-    grid-area: tipo2;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    border-radius: 10px;
-    background-color: rgb(247, 48, 50);
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-}
+    
+    @each $tipo in tipo1,tipo2,tipo3,tipo4,tipo5,tipo6,tipo7,tipo8{
+        .show-#{$tipo}:hover{
+        filter: sepia(0);
+        transition: all 1.09s;
+        border: solid 2px white;
+        box-shadow: 0 0 5px white;
+        }
+    }
 
-.tipo2:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo3 {
-    color: #ffffff;
-    grid-area: tipo3;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #5372ff;
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-    font-size: 25px;
-}
-
-.tipo3:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo4 {
-    color: #ffffff;
-    grid-area: tipo4;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    border-radius: 10px;
-    background-color: #5372ff;
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-}
-
-.tipo4:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo5 {
-    color: rgb(255, 255, 255);
-    grid-area: tipo5;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgb(247, 48, 50);
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-    font-size: 25px
-}
-
-.tipo5:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo6 {
-    color: rgb(255, 255, 255);
-    grid-area: tipo6;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    border-radius: 10px;
-    background-color: rgb(247, 48, 50);
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-}
-
-.tipo6:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo7 {
-    color: #ffffff;
-    grid-area: tipo7;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #5372ff;
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-    font-size: 25px
-}
-
-.tipo7:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
-
-.tipo8 {
-    color: #ffffff;
-    grid-area: tipo8;
-    border: solid 2px black;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    border-radius: 10px;
-    background-color: #5372ff;
-    filter: sepia(1);
-    transition: all 1.09s;
-    text-shadow: 0 0 5px black;
-}
-
-.tipo8:hover {
-    filter: sepia(0);
-    transition: all 1.09s;
-    border: solid 2px white;
-    box-shadow: 0 0 5px white;
-}
+    @each $Bio in Bio1,Bio2,Bio3,Bio4{
+        .img#{$Bio}{
+            height: 400px;
+            width: 100vh;
+            grid-area: $Bio;
+            display: grid;
+            place-items:center;
+            border-radius: 10px;
+            border: solid white 2px;
+            box-shadow: 0 0 5px white;
+        }
+    }
 
 /* --------------------------------------------------------------------------------------------------------- */
 
@@ -535,45 +415,6 @@ h1 {
         justify-content: center;
     }
 }
-
-// .galeria{
-//     background-color: silver;
-//     display: grid;
-//     grid-template-columns: repeat(4 , 1fr) ;
-//     grid-template-rows: repeat(3, 1fr) ;
-//     grid-template-areas: 
-//     "item1 item1 item3 item3"
-//     "item4 item4 item2 item8"
-//     "item6 item7 item5 item8";
-//     height: 100vh;
-// }
-
-// @each $item in item1,item2,item3,item4,item5,item6,item7,item8{
-//     .#{$item}-img{
-//         background-image: url(./media/img#{$item}.jpg);
-//         background-size: cover;
-//         background-position: center;
-//         // height: 450px;
-//         // width: 450px;
-//         margin: 5px;
-//         padding: 5px;
-//         border-radius: 10px;
-//         filter: grayscale(1);
-//         transition: all 1.09s;
-//         grid-area: $item;
-//     }
-// }
-
-// @each $item in item1,item2,item3,item4,item5,item6,item7,item8{
-//     .#{$item}-img:hover{
-//         filter: grayscale(0);
-//         transition: all 1.09s;
-//         box-shadow: 0 0 5px white;
-//         border: 3px solid white;
-//         scale: 1.30;
-//         z-index: 1;
-//     }
-// }
 
 /* --------------------------------------------------------------------------------------------------------- */
 
@@ -778,10 +619,14 @@ footer:hover {
 
     }
 
-    .show0 {
-        font-size: 20px;
+    .principalshow {
+        background-image: url(./Background/background6.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: auto;
     }
-
+    
     .showtipo {
         display: grid;
         grid-template-columns: 1fr;
@@ -789,35 +634,51 @@ footer:hover {
         grid-template-areas:
             "tipo1"
             "tipo2"
+            "Bio1"
+            "Bio1"
             "tipo3"
             "tipo4"
+            "Bio2"
+            "Bio2"
             "tipo5"
             "tipo6"
+            "Bio3"
+            "Bio3"
             "tipo7"
-            "tipo8";
-        justify-content: center;
-        height: auto;
-    }
+            "tipo8"
+            "Bio4"
+            "Bio4";
+        }
+        @each $Bio in Bio1,Bio2,Bio3,Bio4{
+            .img#{$Bio}{
+                height: 100%;
+                width: 100%;
 
+            }
+        }
+
+        @each $tipo in tipo2,tipo4,tipo6,tipo8{
+            .show-#{$tipo}{
+                &.p{
+            font-size: 16px;
+            }
+        }
+            
+        }
+
+        @each $tipo in tipo1,tipo3,tipo5,tipo7{
+            .show-#{$tipo}{
+                &.titulo{
+                font-size: 22px;
+                height: 90px;
+                }
+            }
+        }
+    
     .img{
         width: 100vh ;
         height: auto;
     }
-
-    // .galeria{
-    //     grid-template-columns: 1fr;
-    //     grid-template-rows: auto;
-    //     grid-template-areas:
-    //     "item1"
-    //     "item2"
-    //     "item3"
-    //     "item4"
-    //     "item5"
-    //     "item6"
-    //     "item7"
-    //     "item8";
-    //     height: calc(100vh*3);
-    // }
 
     .item1 {
         background-size: cover;

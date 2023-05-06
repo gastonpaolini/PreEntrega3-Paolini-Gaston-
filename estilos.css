@@ -249,13 +249,14 @@ h1 {
   background-color: rgba(26, 26, 26, 0.7960784314);
   font-size: 32px;
   height: 60px;
+  font-family: "Ysabeau", sans-serif;
 }
 
 .showtipo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "tipo1 tipo3 tipo5 tipo7" "tipo2 tipo4 tipo6 tipo8";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "tipo1 tipo1 Bio1 Bio1" "tipo2 tipo2 Bio1 Bio1" "Bio2 Bio2 tipo3 tipo3" "Bio2 Bio2 tipo4 tipo4" "tipo5 tipo5 Bio3 Bio3" "tipo6 tipo6 Bio3 Bio3" "Bio4 Bio4 tipo7 tipo7" "Bio4 Bio4 tipo8 tipo8";
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -264,15 +265,7 @@ h1 {
   height: auto;
 }
 
-.shows {
-  height: 70px;
-}
-
-.showp {
-  height: auto;
-}
-
-.tipo1 {
+.show-tipo1 {
   color: rgb(255, 255, 255);
   grid-area: tipo1;
   border: solid 2px black;
@@ -287,17 +280,11 @@ h1 {
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo1:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo2 {
+.show-tipo2 {
   color: rgb(255, 255, 255);
   grid-area: tipo2;
   border: solid 2px black;
@@ -306,71 +293,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   border-radius: 10px;
   background-color: rgb(247, 48, 50);
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo2:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo3 {
-  color: #ffffff;
-  grid-area: tipo3;
-  border: solid 2px black;
-  padding: 5px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #5372ff;
-  filter: sepia(1);
-  transition: all 1.09s;
-  text-shadow: 0 0 5px black;
-  font-size: 25px;
-}
-
-.tipo3:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo4 {
-  color: #ffffff;
-  grid-area: tipo4;
-  border: solid 2px black;
-  padding: 5px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  border-radius: 10px;
-  background-color: #5372ff;
-  filter: sepia(1);
-  transition: all 1.09s;
-  text-shadow: 0 0 5px black;
-}
-
-.tipo4:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo5 {
+.show-tipo5 {
   color: rgb(255, 255, 255);
   grid-area: tipo5;
   border: solid 2px black;
@@ -385,17 +318,11 @@ h1 {
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo5:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo6 {
+.show-tipo6 {
   color: rgb(255, 255, 255);
   grid-area: tipo6;
   border: solid 2px black;
@@ -404,23 +331,56 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   border-radius: 10px;
   background-color: rgb(247, 48, 50);
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo6:hover {
-  filter: sepia(0);
+.show-tipo3 {
+  color: rgb(255, 255, 255);
+  grid-area: tipo3;
+  border: solid 2px black;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #5372ff;
+  filter: sepia(1);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px black;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo7 {
-  color: #ffffff;
+.show-tipo4 {
+  color: rgb(255, 255, 255);
+  grid-area: tipo4;
+  border: solid 2px black;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #5372ff;
+  filter: sepia(1);
+  transition: all 1.09s;
+  text-shadow: 0 0 5px black;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
+}
+
+.show-tipo7 {
+  color: rgb(255, 255, 255);
   grid-area: tipo7;
   border: solid 2px black;
   padding: 5px;
@@ -434,18 +394,12 @@ h1 {
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo7:hover {
-  filter: sepia(0);
-  transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
-}
-
-.tipo8 {
-  color: #ffffff;
+.show-tipo8 {
+  color: rgb(255, 255, 255);
   grid-area: tipo8;
   border: solid 2px black;
   padding: 5px;
@@ -453,18 +407,133 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   border-radius: 10px;
   background-color: #5372ff;
   filter: sepia(1);
   transition: all 1.09s;
   text-shadow: 0 0 5px black;
+  font-size: 20px;
+  font-family: "Poltawski Nowy", serif;
 }
 
-.tipo8:hover {
+.show-tipo1.titulo {
+  font-size: 30px;
+  height: 90px;
+}
+
+.show-tipo3.titulo {
+  font-size: 30px;
+  height: 90px;
+}
+
+.show-tipo5.titulo {
+  font-size: 30px;
+  height: 90px;
+}
+
+.show-tipo7.titulo {
+  font-size: 30px;
+  height: 90px;
+}
+
+.show-tipo1:hover {
   filter: sepia(0);
   transition: all 1.09s;
   border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo2:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo3:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo4:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo5:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo6:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo7:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.show-tipo8:hover {
+  filter: sepia(0);
+  transition: all 1.09s;
+  border: solid 2px white;
+  box-shadow: 0 0 5px white;
+}
+
+.imgBio1 {
+  height: 400px;
+  width: 100vh;
+  grid-area: Bio1;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: solid white 2px;
+  box-shadow: 0 0 5px white;
+}
+
+.imgBio2 {
+  height: 400px;
+  width: 100vh;
+  grid-area: Bio2;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: solid white 2px;
+  box-shadow: 0 0 5px white;
+}
+
+.imgBio3 {
+  height: 400px;
+  width: 100vh;
+  grid-area: Bio3;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: solid white 2px;
+  box-shadow: 0 0 5px white;
+}
+
+.imgBio4 {
+  height: 400px;
+  width: 100vh;
+  grid-area: Bio4;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: solid white 2px;
   box-shadow: 0 0 5px white;
 }
 
@@ -663,16 +732,62 @@ footer:hover {
     grid-template-areas: "foto1" "foto2" "foto3";
     place-items: center;
   }
-  .show0 {
-    font-size: 20px;
+  .principalshow {
+    background-image: url(./Background/background6.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
   }
   .showtipo {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "tipo1" "tipo2" "tipo3" "tipo4" "tipo5" "tipo6" "tipo7" "tipo8";
-    justify-content: center;
-    height: auto;
+    grid-template-areas: "tipo1" "tipo2" "Bio1" "Bio1" "tipo3" "tipo4" "Bio2" "Bio2" "tipo5" "tipo6" "Bio3" "Bio3" "tipo7" "tipo8" "Bio4" "Bio4";
+  }
+  .imgBio1 {
+    height: 100%;
+    width: 100%;
+  }
+  .imgBio2 {
+    height: 100%;
+    width: 100%;
+  }
+  .imgBio3 {
+    height: 100%;
+    width: 100%;
+  }
+  .imgBio4 {
+    height: 100%;
+    width: 100%;
+  }
+  .show-tipo2.p {
+    font-size: 16px;
+  }
+  .show-tipo4.p {
+    font-size: 16px;
+  }
+  .show-tipo6.p {
+    font-size: 16px;
+  }
+  .show-tipo8.p {
+    font-size: 16px;
+  }
+  .show-tipo1.titulo {
+    font-size: 22px;
+    height: 90px;
+  }
+  .show-tipo3.titulo {
+    font-size: 22px;
+    height: 90px;
+  }
+  .show-tipo5.titulo {
+    font-size: 22px;
+    height: 90px;
+  }
+  .show-tipo7.titulo {
+    font-size: 22px;
+    height: 90px;
   }
   .img {
     width: 100vh;
