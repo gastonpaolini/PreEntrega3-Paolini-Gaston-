@@ -496,10 +496,10 @@ h1 {
 
 .imgBio1 {
   height: 400px;
-  width: 100vh;
+  width: 80vh;
   grid-area: Bio1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   border: solid white 2px;
   box-shadow: 0 0 5px white;
@@ -507,10 +507,10 @@ h1 {
 
 .imgBio2 {
   height: 400px;
-  width: 100vh;
+  width: 80vh;
   grid-area: Bio2;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   border: solid white 2px;
   box-shadow: 0 0 5px white;
@@ -518,10 +518,10 @@ h1 {
 
 .imgBio3 {
   height: 400px;
-  width: 100vh;
+  width: 80vh;
   grid-area: Bio3;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   border: solid white 2px;
   box-shadow: 0 0 5px white;
@@ -529,10 +529,10 @@ h1 {
 
 .imgBio4 {
   height: 400px;
-  width: 100vh;
+  width: 80vh;
   grid-area: Bio4;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 10px;
   border: solid white 2px;
   box-shadow: 0 0 5px white;
@@ -649,6 +649,7 @@ footer:hover {
   padding: 10px;
   margin: 0px;
   background-color: rgb(198, 54, 55);
+  width: 100%;
 }
 
 .subir {
