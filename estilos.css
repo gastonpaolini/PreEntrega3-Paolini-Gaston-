@@ -49,7 +49,7 @@ body {
 
 #logo {
   border-radius: 45%;
-  border: solid 5px white;
+  border: solid 5px #f2f2f2;
   height: 150px;
   width: 600p;
   border: 3px solid #5079F2;
@@ -72,7 +72,7 @@ body {
   padding-left: 70px;
   border: none;
   font-size: 30px;
-  color: white;
+  color: #f2f2f2;
   display: flex;
   justify-content: end;
 }
@@ -84,12 +84,12 @@ body {
 }
 
 .nav-link {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   transition: all 1.5s;
   font-size: 32px;
   display: flex;
   justify-content: right;
-  -webkit-text-stroke: 0.25px #5372ff;
+  -webkit-text-stroke: 0.25px #5079F2;
   font-family: "Karla", sans-serif;
   display: flex;
   justify-content: end;
@@ -114,7 +114,7 @@ a:hover {
 }
 
 h1 {
-  color: white;
+  color: #f2f2f2;
   padding: 10px;
   margin: 0px;
   text-align: center;
@@ -128,18 +128,18 @@ h1 {
 }
 
 .bio {
-  color: white;
+  color: #f2f2f2;
   padding: 10px;
   margin: 20px;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
   text-align: center;
-  background-color: rgba(26, 26, 26, 0.7529411765);
+  background-color: rgba(26, 26, 26, 0.7176470588);
   border-radius: 10px;
 }
 
 .bio2 {
-  color: white;
+  color: #f2f2f2;
   padding: 10px;
   margin: 0px;
   font-size: 30px;
@@ -181,8 +181,8 @@ h1 {
   background-position: center;
   grid-area: foto1;
   border-radius: 10px;
-  box-shadow: 0 0 15px white;
-  border: solid 3px white;
+  box-shadow: 0 0 15px #f2f2f2;
+  border: solid 3px #f2f2f2;
   transition: all 0.9s;
 }
 
@@ -196,8 +196,8 @@ h1 {
   background-position: center;
   grid-area: foto2;
   border-radius: 10px;
-  box-shadow: 0 0 15px white;
-  border: solid 3px white;
+  box-shadow: 0 0 15px #f2f2f2;
+  border: solid 3px #f2f2f2;
   transition: all 0.9s;
 }
 
@@ -267,9 +267,9 @@ h1 {
 }
 
 .show-tipo1 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo1;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -277,18 +277,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(247, 48, 50);
+  background-color: #f25252;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo2 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo2;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -296,18 +296,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(247, 48, 50);
+  background-color: #f25252;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo5 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo5;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -315,18 +315,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(247, 48, 50);
+  background-color: #f25252;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo6 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo6;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -334,18 +334,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(247, 48, 50);
+  background-color: #f25252;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo3 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo3;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -353,18 +353,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #5372ff;
+  background-color: #5079F2;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo4 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo4;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -372,18 +372,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #5372ff;
+  background-color: #5079F2;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo7 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo7;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -391,18 +391,18 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #5372ff;
+  background-color: #5079F2;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
 
 .show-tipo8 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   grid-area: tipo8;
-  border: solid 2px black;
+  border: solid 2px #595959;
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -410,10 +410,10 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #5372ff;
+  background-color: #5079F2;
   filter: sepia(1);
   transition: all 1.09s;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #595959;
   font-size: 20px;
   font-family: "Poltawski Nowy", serif;
 }
@@ -441,57 +441,57 @@ h1 {
 .show-tipo1:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo2:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo3:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo4:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo5:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo6:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo7:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .show-tipo8:hover {
   filter: sepia(0);
   transition: all 1.09s;
-  border: solid 2px white;
-  box-shadow: 0 0 5px white;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .imgBio1 {
@@ -501,8 +501,8 @@ h1 {
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: solid white 2px;
-  box-shadow: 0 0 5px white;
+  border: solid #f2f2f2 2px;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .imgBio2 {
@@ -512,8 +512,8 @@ h1 {
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: solid white 2px;
-  box-shadow: 0 0 5px white;
+  border: solid #f2f2f2 2px;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .imgBio3 {
@@ -523,8 +523,8 @@ h1 {
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: solid white 2px;
-  box-shadow: 0 0 5px white;
+  border: solid #f2f2f2 2px;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .imgBio4 {
@@ -534,8 +534,8 @@ h1 {
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: solid white 2px;
-  box-shadow: 0 0 5px white;
+  border: solid #f2f2f2 2px;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -557,7 +557,7 @@ h1 {
 }
 
 .formulario {
-  color: white;
+  color: #f2f2f2;
   display: inline;
   text-align: center;
   font-family: "Source Serif Pro", serif;
@@ -569,17 +569,17 @@ h1 {
 }
 
 input {
-  color: whitesmoke;
+  color: #f2f2f2;
   background-color: #1a1a1a;
 }
 
 input::placeholder {
-  color: #3f3d3d;
+  color: #595959;
   text-transform: capitalize;
 }
 
 .act:focus {
-  background-color: #5372ff;
+  background-color: #5079F2;
   box-shadow: 0 0 3px white;
 }
 
@@ -594,23 +594,23 @@ label {
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
-  background-color: #5372ff;
+  background-color: #5079F2;
   font-weight: bold;
-  color: azure;
+  color: #f2f2f2;
   text-shadow: 0 0 5px #1a1a1a;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
 .enviar:hover {
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 .reset {
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
-  background-color: rgb(247, 48, 50);
+  background-color: #f25252;
   font-weight: bold;
   color: azure;
   text-shadow: 0 0 5px #1a1a1a;
@@ -619,12 +619,12 @@ label {
 }
 
 .reset:hover {
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 5px #f2f2f2;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
 footer {
-  background-color: rgb(226, 80, 76);
+  background-color: #f25252;
   transition: all 1.09s;
   filter: grayscale(100%);
   width: 100%;
@@ -636,7 +636,7 @@ footer:hover {
 }
 
 #pfooter {
-  color: white;
+  color: #f2f2f2;
   padding: 10px;
   margin: 0px;
   font-family: "Ysabeau", sans-serif;
@@ -648,19 +648,19 @@ footer:hover {
   text-align: center;
   padding: 10px;
   margin: 0px;
-  background-color: rgb(198, 54, 55);
+  background-color: #f25252;
   width: 100%;
 }
 
 .subir {
   height: 45px;
   width: 45px;
-  background-color: rgb(78, 78, 78);
+  background-color: #595959;
   border-radius: 40%;
   position: fixed;
   right: 10px;
   bottom: 1px;
-  color: #fff;
+  color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;

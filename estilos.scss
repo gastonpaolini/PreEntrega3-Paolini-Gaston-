@@ -91,7 +91,7 @@ body{
 
 #logo {
     border-radius: 45%;
-    border: solid 5px white;
+    border: solid 5px $color4;
     height: 150px;
     width: 600p;
     border: 3px solid $color1;
@@ -114,7 +114,7 @@ body{
     padding-left: 70px;
     border: none;
     font-size: 30px;
-    color: white;
+    color: $color4;
     display: flex;
     justify-content: end;
 }
@@ -126,12 +126,12 @@ body{
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
+    color: $color4;
     transition: all 1.5s;
     font-size: 32px;
     display: flex;
     justify-content: right;
-    -webkit-text-stroke: 0.25px #5372ff;
+    -webkit-text-stroke: 0.25px $color1;
     font-family: $font12;
     display: flex;
     justify-content: end;
@@ -157,7 +157,7 @@ a:hover {
 //_____________________________________________________________________________________________________________
 
 h1 {
-    color: white;
+    color: $color4;
     padding: 10px;
     margin: 0px;
     text-align: center;
@@ -175,18 +175,18 @@ h1 {
 
 
 .bio {
-    color: white;
+    color: $color4;
     padding: 10px;
     margin: 20px;
     font-size: 20px;
     font-family: $font7;
     text-align: center;
-    background-color: #1a1a1ac0;
+    background-color: $colorform;
     border-radius: 10px;
 }
 
 .bio2 {
-    color: white;
+    color: $color4;
     padding: 10px;
     margin: 0px;
     font-size: 30px;
@@ -231,8 +231,8 @@ h1 {
     background-position: center;
     grid-area: foto1;
     border-radius: 10px;
-    box-shadow: 0 0 15px white;
-    border: solid 3px white;
+    box-shadow: 0 0 15px $color4;
+    border: solid 3px $color4;
     transition: all 0.9s;
 
 }
@@ -247,8 +247,8 @@ h1 {
     background-position: center;
     grid-area: foto2;
     border-radius: 10px;
-    box-shadow: 0 0 15px white;
-    border: solid 3px white;
+    box-shadow: 0 0 15px $color4;
+    border: solid 3px $color4;
     transition: all 0.9s;
 }
 
@@ -332,9 +332,9 @@ h1 {
 
 @each $tipo in tipo1,tipo2,tipo5,tipo6{
     .show-#{$tipo}{
-        color: rgb(255, 255, 255);
+        color: $color4;
         grid-area: $tipo;
-        border: solid 2px black;
+        border: solid 2px $color5;
         padding: 5px;
         margin: 5px;
         display: flex;
@@ -342,10 +342,10 @@ h1 {
         align-items: center;
         text-align: center;
         border-radius: 10px;
-        background-color: rgb(247, 48, 50);
+        background-color: $color2;
         filter: sepia(1);
         transition: all 1.09s;
-        text-shadow: 0 0 5px black;
+        text-shadow: 0 0 5px $color5;
         font-size: 20px;
         font-family:'Poltawski Nowy', serif ;
     }
@@ -353,9 +353,9 @@ h1 {
 
     @each $tipo in tipo3,tipo4,tipo7,tipo8{
         .show-#{$tipo}{
-            color: rgb(255, 255, 255);
+            color: $color4;
             grid-area: $tipo;
-            border: solid 2px black;
+            border: solid 2px $color5;
             padding: 5px;
             margin: 5px;
             display: flex;
@@ -363,10 +363,10 @@ h1 {
             align-items: center;
             text-align: center;
             border-radius: 10px;
-            background-color: #5372ff ;
+            background-color: $color1 ;
             filter: sepia(1);
             transition: all 1.09s;
-            text-shadow: 0 0 5px black;
+            text-shadow: 0 0 5px $color5;
             font-size: 20px;
             font-family:'Poltawski Nowy', serif 
         }
@@ -386,8 +386,8 @@ h1 {
         .show-#{$tipo}:hover{
         filter: sepia(0);
         transition: all 1.09s;
-        border: solid 2px white;
-        box-shadow: 0 0 5px white;
+        border: solid 2px $color4;
+        box-shadow: 0 0 5px $color4;
         }
     }
 
@@ -399,8 +399,8 @@ h1 {
             display: flex;
             justify-content: center;
             border-radius: 10px;
-            border: solid white 2px;
-            box-shadow: 0 0 5px white;
+            border: solid $color4 2px;
+            box-shadow: 0 0 5px $color4;
         }
     }
 
@@ -426,7 +426,7 @@ h1 {
 }
 
 .formulario {
-    color: white;
+    color: $color4;
     display: inline;
     text-align: center;
     font-family: $font10;
@@ -438,18 +438,18 @@ h1 {
 }
 
 input {
-    color: whitesmoke;
+    color: $color4;
     background-color: #1a1a1a;
 }
 
 input::placeholder {
-    color: #3f3d3d;
+    color: $color5;
     text-transform: capitalize;
 
 }
 
 .act:focus {
-    background-color: #5372ff;
+    background-color: $color1;
     box-shadow: 0 0 3px white;
 }
 
@@ -464,23 +464,23 @@ label {
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-    background-color: #5372ff;
+    background-color: $color1;
     font-weight: bold;
-    color: azure;
+    color: $color4;
     text-shadow: 0 0 5px #1a1a1a;
     font-family: $font9;
     text-align: center;
 }
 
 .enviar:hover {
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px $color4;
 }
 
 .reset {
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(247, 48, 50);
+    background-color: $color2;
     font-weight: bold;
     color: azure;
     text-shadow: 0 0 5px #1a1a1a;
@@ -489,13 +489,13 @@ label {
 }
 
 .reset:hover {
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px $color4;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
 
 footer {
-    background-color: rgb(226, 80, 76);
+    background-color: $color2;
     transition: all 1.09s;
     filter: grayscale(100%);
     width: 100%;
@@ -507,7 +507,7 @@ footer:hover {
 }
 
 #pfooter {
-    color: white;
+    color: $color4;
     padding: 10px;
     margin: 0px;
     font-family: $font11;
@@ -519,19 +519,19 @@ footer:hover {
     text-align: center;
     padding: 10px;
     margin: 0px;
-    background-color: rgb(198, 54, 55);
+    background-color: $color2;
     width: 100%;
 }
 
 .subir {
     height: 45px;
     width: 45px;
-    background-color: rgb(78, 78, 78);
+    background-color: $color5;
     border-radius: 40%;
     position: fixed;
     right: 10px;
     bottom: 1px;
-    color: #fff;
+    color: $color4;
     display: flex;
     justify-content: center;
     align-items: center;
