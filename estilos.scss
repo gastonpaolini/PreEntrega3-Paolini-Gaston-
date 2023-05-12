@@ -88,6 +88,17 @@ body{
     margin: 0px;
 }
 
+.animate__animated{ 
+    &.animate__backInLeft{
+        animation-delay: 2s;
+        animation-duration: 3s ;
+    }
+    &.animate_backInRight{
+        animation-delay: 3s;
+        animation-duration: 5s;
+    }
+}
+
 
 #logo {
     border-radius: 45%;
