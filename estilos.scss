@@ -89,13 +89,14 @@ body{
 }
 
 .animate__animated{ 
+    animation-delay: 1s;
     &.animate__backInLeft{
         animation-delay: 2s;
         animation-duration: 3s ;
     }
     &.animate_backInRight{
-        animation-delay: 3s;
-        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-duration: 3s;
     }
 }
 
@@ -167,6 +168,11 @@ a:hover {
 }
 //_____________________________________________________________________________________________________________
 
+.animate__flip{
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+}
+
 h1 {
     color: $color4;
     padding: 10px;
@@ -183,7 +189,6 @@ h1 {
     // text-shadow: 0 0 5px white;
     // background-color: #1a1a1ac0;
 }
-
 
 .bio {
     color: $color4;
@@ -204,6 +209,11 @@ h1 {
     font-family: $font7;
     text-align: center;
     background-color: rgba(255, 0, 0, 0.623);
+}
+
+.animate__flipInY{
+    animation-delay: 3s;
+    animation-duration: 4s;
 }
 
 .foto {
@@ -231,79 +241,37 @@ h1 {
 
 }
 
-.foto1 {
-    grid-area: foto1;
-
+@each $foto in foto1 , foto2 , foto3{
+    .#{$foto}{
+    grid-area: $foto;
+    }
 }
 
-.foto1:hover {
-    background: url(./Background/foto\ bio.jpg);
+@each $foto in foto1, foto2 , foto3{
+    .#{$foto}:hover{
+    background: url(./Background/#{$foto}.jpg);
     background-size: cover;
     background-position: center;
-    grid-area: foto1;
+    grid-area: $foto;
     border-radius: 10px;
     box-shadow: 0 0 15px $color4;
     border: solid 3px $color4;
     transition: all 0.9s;
 
+    }
 }
 
-.foto2 {
-    grid-area: foto2;
-}
 
-.foto2:hover {
-    background: url(./Background/foto\ bio2.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto2;
-    border-radius: 10px;
-    box-shadow: 0 0 15px $color4;
-    border: solid 3px $color4;
-    transition: all 0.9s;
-}
-
-.foto3 {
-    grid-area: foto3;
-
-}
-
-.foto3:hover {
-    background: url(./Background/foto\ bio3.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto3;
-    border-radius: 10px;
-    box-shadow: 0 0 15px white;
-    border: solid 3px white;
-    transition: all 0.9s;
-}
-
-.act1:active {
-    transform: rotate(180deg);
-    background-image: url(./Background/7corazon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: none;
-    border: none;
-}
-
-.act2:active {
-    transform: rotate(180deg);
-    background-image: url(./Background/4pica.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: none;
-    border: none;
-}
-
-.act3:active {
-    transform: rotate(180deg);
-    background-image: url(./Background/5corazon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: none;
-    border: none;
+@each $act in act1 , act2 , act3 {
+    .#{$act}:active{
+        transform: rotate(180deg);
+        transform: scale(1.02);
+        background-image: url(./Background/#{$act}.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: none;
+        border: none;
+    }
 }
 
 //_____________________________________________________________________________________________________________
@@ -538,7 +506,7 @@ footer:hover {
     height: 45px;
     width: 45px;
     background-color: $color5;
-    border-radius: 40%;
+    border-radius: 50%;
     position: fixed;
     right: 10px;
     bottom: 1px;
@@ -548,11 +516,17 @@ footer:hover {
     align-items: center;
     line-height: 45px;
     font-size: 30px;
+}   
+
+.animate__bounceIn{
+    animation-delay: 5s;
+    animation-duration: 3s
 }
 
 .subir:hover {
-    background-color: $color4;
+    background-color: #1BD741;
     text-decoration: none;
+    color: $color4;
 }
 
 @media only screen and (max-width: 768px) {
