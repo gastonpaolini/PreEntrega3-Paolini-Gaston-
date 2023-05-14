@@ -94,7 +94,7 @@ body{
         animation-delay: 2s;
         animation-duration: 3s ;
     }
-    &.animate_backInRight{
+    &.animate_animate__backInDown{
         animation-delay: 1s;
         animation-duration: 3s;
     }
@@ -536,6 +536,15 @@ footer:hover {
         align-items: start;
         justify-content: space-around;
     }
+
+    .animate__animated{ 
+        animation-delay: 0s;
+    .animate__backInLeft{
+        animation-delay: 0s;
+        animation-duration: 1s ;
+    }
+    }
+
 
     .navbar-nav {
         display: inline;
