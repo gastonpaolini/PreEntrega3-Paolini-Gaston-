@@ -596,12 +596,12 @@ input {
 }
 
 input::-moz-placeholder {
-  color: #595959;
+  color: #f2f2f2;
   text-transform: capitalize;
 }
 
 input::placeholder {
-  color: #595959;
+  color: #f2f2f2;
   text-transform: capitalize;
 }
 
