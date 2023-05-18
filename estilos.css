@@ -751,13 +751,6 @@ footer:hover {
   .nav-link:hover {
     font-size: 28px;
   }
-  .principalshow {
-    background-image: url(./Background/background6.png);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: auto;
-  }
   .principalbio {
     height: auto;
     width: auto;
