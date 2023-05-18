@@ -429,7 +429,7 @@ input::placeholder {
 
 .act:focus {
     background-color: $color1;
-    box-shadow: 0 0 3px white;
+    box-shadow: 0 0 3px $color4;
 }
 
 label {
